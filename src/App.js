@@ -11,13 +11,20 @@ export default function App() {
         <Weather defaultCity="Oslo" />
         <footer>
           <a
-            href="https://github.com/MirNO89/weather-app-shecodes"
+            href="https://github.com/MirNO89/new-react-weather"
             target="_blank"
             rel="noopener noreferrer"
           >
             Open-source code
           </a>{" "}
-          by Miriam MK
+          by Miriam MK, hosted on{" "}
+          <a
+            href="https://amazing-sorbet-18c88b.netlify.app"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Netlify
+          </a>
         </footer>
       </div>
     </div>
