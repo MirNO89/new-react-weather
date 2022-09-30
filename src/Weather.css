@@ -41,8 +41,8 @@
   margin-left: 10px;
 }
 
-.Weather img {
-  float: left;
+.Weather canvas {
+  margin: 10px auto;
 }
 
 .Weather .unit {
