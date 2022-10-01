@@ -9,6 +9,7 @@ import "./Weather.css";
 export default function Weather(props) {
   const [weatherData, setWeatherData] = useState({ ready: false });
   const [city, setCity] = useState(props.defaultCity);
+
   function handleResponse(response) {
     setWeatherData({
       ready: true,
@@ -42,6 +43,7 @@ export default function Weather(props) {
   if (weatherData.ready) {
     return (
       <div className="Weather">
+        <header>Weather Search</header>
         <form onSubmit={handleSubmit}>
           <div className="row">
             <div className="col-9">
