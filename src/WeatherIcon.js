@@ -1,34 +1,48 @@
 import React from "react";
-import ReactAnimatedWeather from "react-animated-weather";
+
+import clearDay from "@bybas/weather-icons/design/line/animation-ready/clear-day.svg";
+import clearNight from "@bybas/weather-icons/design/line/animation-ready/clear-night.svg";
+import partlyCloudyDay from "@bybas/weather-icons/design/line/animation-ready/partly-cloudy-day.svg";
+import partlyCloudyNight from "@bybas/weather-icons/design/line/animation-ready/partly-cloudy-night.svg";
+import cloudy from "@bybas/weather-icons/design/line/animation-ready/cloudy.svg";
+import overcast from "@bybas/weather-icons/design/line/animation-ready/overcast.svg";
+import rain from "@bybas/weather-icons/design/line/animation-ready/rain.svg";
+import partlyCloudyDayRain from "@bybas/weather-icons/design/line/animation-ready/partly-cloudy-day-rain.svg";
+import partlyCloudyNightRain from "@bybas/weather-icons/design/line/animation-ready/partly-cloudy-night-rain.svg";
+import thunderstorms from "@bybas/weather-icons/design/line/animation-ready/thunderstorms.svg";
+import snow from "@bybas/weather-icons/design/line/animation-ready/snow.svg";
+import mist from "@bybas/weather-icons/design/line/animation-ready/mist.svg";
 
 export default function WeatherIcon(props) {
   const codeMapping = {
-    "01d": "CLEAR_DAY",
-    "01n": "CLEAR_NIGHT",
-    "02d": "PARTLY_CLOUDY_DAY",
-    "02n": "PARTLY_CLOUDY_NIGHT",
-    "03d": "PARTLY_CLOUDY_DAY",
-    "03n": "PARTLY_CLOUDY_NIGHT",
-    "04d": "CLOUDY",
-    "04n": "CLOUDY",
-    "09d": "RAIN",
-    "09n": "RAIN",
-    "10d": "RAIN",
-    "10n": "RAIN",
-    "11d": "RAIN",
-    "11n": "RAIN",
-    "13d": "SNOW",
-    "13n": "SNOW",
-    "50d": "FOG",
-    "50n": "FOG",
+    "01d": clearDay,
+    "01n": clearNight,
+    "02d": partlyCloudyDay,
+    "02n": partlyCloudyNight,
+    "03d": cloudy,
+    "03n": cloudy,
+    "04d": overcast,
+    "04n": overcast,
+    "09d": rain,
+    "09n": rain,
+    "10d": partlyCloudyDayRain,
+    "10n": partlyCloudyNightRain,
+    "11d": thunderstorms,
+    "11n": thunderstorms,
+    "13d": snow,
+    "13n": snow,
+    "50d": mist,
+    "50n": mist,
   };
 
   return (
-    <ReactAnimatedWeather
-      icon={codeMapping[props.code]}
-      color="#1e1e1e"
-      size={props.size}
-      animate={true}
-    />
+    <div className="WeatherIcon">
+      <img
+        src={codeMapping[props.icon]}
+        alt={props.description}
+        size={props.size}
+        width={props.width}
+      />
+    </div>
   );
 }
