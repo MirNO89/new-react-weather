@@ -1,17 +1,17 @@
 import React from "react";
 
-import clearDay from "@bybas/weather-icons/design/line/animation-ready/clear-day.svg";
-import clearNight from "@bybas/weather-icons/design/line/animation-ready/clear-night.svg";
-import partlyCloudyDay from "@bybas/weather-icons/design/line/animation-ready/partly-cloudy-day.svg";
-import partlyCloudyNight from "@bybas/weather-icons/design/line/animation-ready/partly-cloudy-night.svg";
-import cloudy from "@bybas/weather-icons/design/line/animation-ready/cloudy.svg";
-import overcast from "@bybas/weather-icons/design/line/animation-ready/overcast.svg";
-import rain from "@bybas/weather-icons/design/line/animation-ready/rain.svg";
-import partlyCloudyDayRain from "@bybas/weather-icons/design/line/animation-ready/partly-cloudy-day-rain.svg";
-import partlyCloudyNightRain from "@bybas/weather-icons/design/line/animation-ready/partly-cloudy-night-rain.svg";
-import thunderstorms from "@bybas/weather-icons/design/line/animation-ready/thunderstorms.svg";
-import snow from "@bybas/weather-icons/design/line/animation-ready/snow.svg";
-import mist from "@bybas/weather-icons/design/line/animation-ready/mist.svg";
+import clearDay from "@bybas/weather-icons/design/fill/animation-ready/clear-day.svg";
+import clearNight from "@bybas/weather-icons/design/fill/animation-ready/clear-night.svg";
+import partlyCloudyDay from "@bybas/weather-icons/design/fill/animation-ready/partly-cloudy-day.svg";
+import partlyCloudyNight from "@bybas/weather-icons/design/fill/animation-ready/partly-cloudy-night.svg";
+import cloudy from "@bybas/weather-icons/design/fill/animation-ready/cloudy.svg";
+import overcast from "@bybas/weather-icons/design/fill/animation-ready/overcast.svg";
+import rain from "@bybas/weather-icons/design/fill/animation-ready/rain.svg";
+import partlyCloudyDayRain from "@bybas/weather-icons/design/fill/animation-ready/partly-cloudy-day-rain.svg";
+import partlyCloudyNightRain from "@bybas/weather-icons/design/fill/animation-ready/partly-cloudy-night-rain.svg";
+import thunderstorms from "@bybas/weather-icons/design/fill/animation-ready/thunderstorms.svg";
+import snow from "@bybas/weather-icons/design/fill/animation-ready/snow.svg";
+import mist from "@bybas/weather-icons/design/fill/animation-ready/mist.svg";
 
 export default function WeatherIcon(props) {
   const codeMapping = {
